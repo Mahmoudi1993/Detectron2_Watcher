@@ -4,9 +4,6 @@
 Object tracking implemented with Detectron2, Deep SORT and PyTorch. Detectron2 is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms. This platform is implemented in PyTorch. Thanks to its modular design its a very flexible and extensible framework providing fast training. We can take the output of Detectron2 feed these object detections into Deep SORT (Simple Online and Realtime Tracking with a Deep Association Metric) in order to create a highly accurate object tracker.
 
 # Demo of Object Detector on Cars
-______________________________________________________________________________________________________________________________
-
-
 
 https://github.com/Mahmoudi1993/Detectron2_Watcher/assets/74957886/56015463-633c-4964-a2c3-73c54aad5d7b
 
