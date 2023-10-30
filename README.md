@@ -5,7 +5,11 @@ Object tracking implemented with Detectron2, Deep SORT and PyTorch. Detectron2 i
 
 # Demo of Object Detector on Cars
 
-https://github.com/Mahmoudi1993/Detectron2_Watcher/assets/74957886/56015463-633c-4964-a2c3-73c54aad5d7b
+
+
+
+
+
 
 
 ```
