@@ -7,6 +7,7 @@ Object tracking implemented with Detectron2, Deep SORT and PyTorch. Detectron2 i
 
 
 
+![ezgif com-video-to-gif](https://github.com/Mahmoudi1993/Detectron2_Watcher/assets/74957886/c19d39b0-4403-4f15-b654-1cada2f057fe)
 
 
 
