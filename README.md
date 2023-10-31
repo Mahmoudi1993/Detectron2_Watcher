@@ -26,22 +26,60 @@ Running on CPU:
 Running on GPU:
 
 ```
-# Helper function, used these for debugging purposes
-# detector2 build only succeeds if CUDA version is correct
 
-!nvidia-smi
-!nvcc --version
+# pip install detectron2 on PC
+# Create an environment Anaconda
+# conda activate detectron_evn
 
-import torch
-torch.__version__
-import torchvision
-torchvision.__version__
+conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
+conda install -c conda-forge pycocotools
+pip install -U torch torchvision cython(pip install cython)
+conda install -c anaconda git
+git clone https://github.com/facebookresearch/detectron2.git
 
-!pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.7/index.html
+
+# runing codes project real time people counting on Visual Studio Code
+
 ```
 
 # Downloading Official  Detectron2 Model Zoo Pre-trained Weights
 Our object tracker uses Detectron2 to make the object detections, which deep sort then uses to track.Many pretrained models can be found back within the "modelzoo". This is a collection of models pretrained on a certain dataset that are ready to be used. Mostly people will use the pretrained weights of these model for initalization of there own custom model. This significantly shortens the training time and performance.For easy demo purposes we will use the pre-trained weights for our tracker. Download pre-trained Detectron2.weights file: https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
+
+# Calculate Coordinates for a Polygon Zone
+Before we can start counting objects in a zone, we need to first define the zone in which we want to count objects. 
+We need the coordinates of the zone. We’ll use these later to know whether an object is inside or outside of the zone.
+
+
+To calculate coordinates inside a zone, we can use PolygonZone, 
+an interactive web application that lets you draw polygons on an image and export their coordinates for use with supervision.
+
+PolgyonZone needs a frame from the video with which you will be working. We can extract a frame from our video using the following code:
+
+```
+# PolgyonZone needs a frame from the video with which you will be working.
+# We can extract a frame from our video using the following code:
+
+import supervision as sv
+import cv2
+import os
+import numpy as np
+from google.colab.patches import cv2_imshow
+
+generator = sv.get_video_frames_generator("/content/Detectron2_Watcher/example/Car_test_1.mp4")
+iterator = iter(generator)
+frame = next(iterator)
+
+OUTPUT_VIDEO_PATH = r'/content/Detectron2_Watcher/Results'
+os.chdir(OUTPUT_VIDEO_PATH)
+
+cv2.imwrite("frame.jpg", frame)
+```
+
+This code will retrieve the first frame from our video and save the frame as a file on our local machine.
+
+We can now use this image to calculate the coordinates of the zone we want to draw on our image. First, open up PolygonZone and upload the frame:
+https://roboflow.github.io/polygonzone/
 
 ```
 !pip install
