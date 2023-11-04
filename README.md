@@ -47,6 +47,14 @@ git clone https://github.com/facebookresearch/detectron2.git
 Our object tracker uses Detectron2 to make the object detections, which deep sort then uses to track.Many pretrained models can be found back within the "modelzoo". This is a collection of models pretrained on a certain dataset that are ready to be used. Mostly people will use the pretrained weights of these model for initalization of there own custom model. This significantly shortens the training time and performance.For easy demo purposes we will use the pre-trained weights for our tracker. Download pre-trained Detectron2.weights file: https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 
 # Running the Object Detector with Detectron2
+we need to do is run the Detector.py script to run our object tracker with Detectron2, DeepSort and PyTorch.
+
+```
+# Run Detectron2 deep sort Detector on video
+python Detector.py
+
+```
+
 Calculate Coordinates for a Polygon Zone:
 
 Before we can start counting objects in a zone, we need to first define the zone in which we want to count objects. 
@@ -85,4 +93,24 @@ https://roboflow.github.io/polygonzone/
 
 ```
 !pip install
+```
+
+set video flag to:
+
+0 = ( Webcam in laptop )
+
+1 = ( The webcam is connected to the laptop through the USB port )
+
+link = ( Camera )
+
+If you don't have a high-quality camera, we can use  yourself phone's camera through the IP Webcam app.
+
+About this app:
+IP Webcam turns your phone into a network camera with multiple viewing options. 
+View your camera on any platform with VLC player or web browser. Stream video inside WiFi network without internet access.
+
+```
+# Run Detectron2 deep sort Detector on webcam
+python Detector.py
+
 ```
