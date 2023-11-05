@@ -21,13 +21,13 @@ from Detection import predictor
 FLAGS = flags.FLAGS
 
 flags.DEFINE_string('video', '/content/Detectron2_Watcher/example/Car_test_1.mp4', 'path to input video or set to 0 for webcam')
-flags.DEFINE_string('output', '/content/Detectron2_Watcher/Results/Car_test_1_result.mp4', 'path to output video')
+flags.DEFINE_string('output', None , 'path to output video')
 flags.DEFINE_integer('class_id', 2, 'class_id number to')
 flags.DEFINE_integer('size', 416, 'resize images to')
 flags.DEFINE_string('model', 'COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml', 'COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml')
 flags.DEFINE_string('output_format', 'XVID', 'codec used in VideoWriter when saving video to file')
 flags.DEFINE_float('score', 0.50, 'score threshold')
-flags.DEFINE_string('polygon','[788, 286],[140, 314],[376, 170],[496, 166],[788, 282]' , 'polygon threshold')
+flags.DEFINE_string('polygon', None , 'polygon threshold')
 
 def main(argv):
     source_path = FLAGS.video
