@@ -113,5 +113,29 @@ View your camera on any platform with VLC player or web browser. Stream video in
 ```
 # Run Detectron2 deep sort Detector on webcam
 python Detector.py --video 0 --output /content/Detectron2_Watcher/Results/Car_test_1_result.mp4 --model /content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml
+```
+
+# Command Line Args Reference
 
 ```
+Detector.py:
+  --video: path to input video (use 0 for webcam)
+    (default: '/content/Detectron2_Watcher/example/Car_test_1.mp4')
+  --output: path to output video (remember to set right codec for given format. e.g. XVID for .avi)
+    (default: None)
+  --output_format: codec used in VideoWriter when saving video to file
+    (default: 'XVID)
+  --weights: path to weights file
+    (default: '/content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml')
+  --size: resize images to
+    (default: 416)
+  --score: confidence threshold
+    (default: 0.50)
+  -- class_id: class_id number to
+    (default: 2)
+  --polygon: polygon threshold
+    (default: None)
+```
+
+# References
+https://github.com/facebookresearch/detectron2
