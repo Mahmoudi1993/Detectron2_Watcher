@@ -51,7 +51,7 @@ we need to do is run the Detector.py script to run our object tracker with Detec
 
 ```
 # Run Detectron2 deep sort Detector on video
-python Detector.py --video /content/Detectron2_Watcher/example/Car_test_1.mp4 --output /content/Detectron2_Watcher/Results/Car_test_1_result.mp4 --model /content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml
+python Detector.py --video /content/Detectron2_Watcher/example/Car_test_1.mp4 --score --output /content/Detectron2_Watcher/Results/Car_test_1_result.mp4 --model /content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml
 ```
 
 Calculate Coordinates for a Polygon Zone:
@@ -135,6 +135,8 @@ Detector.py:
     (default: 2)
   --polygon: polygon threshold
     (default: None)
+ --score: score threshold
+    (default:0.50)
 ```
 
 # References
