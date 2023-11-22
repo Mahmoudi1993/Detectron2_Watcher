@@ -36,7 +36,7 @@ def main(argv):
     input_size = FLAGS.size
     model = FLAGS.model
     polygon = FLAGS.polygon
-    
+    score = FLAGS.score
     # initiate polygon zone cars
     res = ast.literal_eval(polygon)
     res = list(res)
@@ -52,7 +52,7 @@ def main(argv):
     zone_annotator = sv.PolygonZoneAnnotator(zone=zone, color=sv.Color.white(), thickness=2, text_thickness=2, text_scale=1)
 
 
-    emp1 = predictor(model)
+    emp1 = predictor(model, score)
     Predictor = (emp1.get_frame()) 
 
     def process_frame(frame: np.ndarray, i: int) -> np.ndarray:
