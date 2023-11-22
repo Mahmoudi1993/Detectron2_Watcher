@@ -47,10 +47,10 @@ def class_name_id():
 # the result of the pretrained model from the modelzoo. 
 # For this we'll use the Visualizer class.
 class predictor():
-    def __init__(self, model): #frame):
+    def __init__(self, model, score): #frame):
         # self.frame = frame
         self.model = model
-
+        self.score = score
     def get_frame(self):
         
         from detectron2 import model_zoo
@@ -60,7 +60,7 @@ class predictor():
         cfg = get_cfg()
         cfg.MODEL.DEVICE = "cpu"
         cfg.merge_from_file(model_zoo.get_config_file(self.model))
-        cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  # set threshold for this model
+        cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = score  # set threshold for this model
         cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(self.model)
         predictor = DefaultPredictor(cfg)
         return predictor
