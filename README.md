@@ -115,9 +115,29 @@ View your camera on any platform with VLC player or web browser. Stream video in
 python Detector.py --video 0 --output /content/Detectron2_Watcher/Results/Car_test_1_result.mp4 --model /content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml
 ```
 
+```
+# save  model
+python Save_model.py --class_id 0 --output /content/Detectron2_Watcher/Results --model COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml
+```
 # Command Line Args Reference
 
 ```
+  Save_model.py:
+  --DatasetLabels:  path to input dataset
+    (default: None)
+  --output
+    (default: None)
+  --input_size: define input size of export model
+    (default: 416)
+  ----model: path to weights model
+    (default: '/content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml')
+  --size: resize images to
+    (default: 416)
+  -- class_id: class_id number to
+    (default: 0)
+ --score: score threshold
+    (default:0.50)
+
 Detector.py:
   --video: path to input video (use 0 for webcam)
     (default: '/content/Detectron2_Watcher/example/Car_test_1.mp4')
