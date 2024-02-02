@@ -127,13 +127,13 @@ python Save_model.py --class_id 0 --output /content/Detectron2_Watcher/Results -
 
 ```
   Save_model.py:
-  --DatasetLabels:  path to input dataset
+  --DatasetLabels: path to input dataset
     (default: None)
-  --output
+  --output: path to output video (remember to set right codec for given format. e.g. XVID for .avi)
     (default: None)
   --input_size: define input size of export model
     (default: 416)
-  ----model: path to weights model
+  --model: path to weights model
     (default: '/content/detectron2_repo/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml')
   --size: resize images to
     (default: 416)
@@ -156,7 +156,7 @@ Detector.py:
   --score: confidence threshold
     (default: 0.50)
   -- class_id: class_id number to
-    (default: 2)
+    (default: 0)
   --polygon: polygon threshold
     (default: None)
  --score: score threshold
