@@ -5,11 +5,13 @@ Object tracking implemented with Detectron2, Deep SORT and PyTorch. Detectron2 i
 
 # Demo of Object Detector on People
 
+![Uploading People_test_1_result_gif.gif…]()
+
+
 # Demo of Object Detector on Cars
 
+![Uploading Cars_test_00_result_gif.gif…]()
 
-
-![ezgif com-video-to-gif](https://github.com/Mahmoudi1993/Detectron2_Watcher/assets/74957886/c19d39b0-4403-4f15-b654-1cada2f057fe)
 
 
 # Demo of Object Detector on vehicle speed detection
