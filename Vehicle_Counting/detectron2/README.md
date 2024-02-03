@@ -10,6 +10,13 @@ python vehicle_counting.py --video /content/People-Counting-in-Real-Time-with-De
 
 ```
 
+# Demo of Object Detector on Cars
+
+
+![Uploading Cars_test_1_result_gif.gif…]()
+
+
+
 Command Line Args Reference:
 
 ```
