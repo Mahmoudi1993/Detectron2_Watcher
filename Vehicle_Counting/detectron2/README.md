@@ -13,7 +13,8 @@ python vehicle_counting.py --video /content/People-Counting-in-Real-Time-with-De
 # Demo of Object Detector on Cars
 
 
-![Uploading Cars_test_1_result_gif.gif…]()
+
+![Cars_test_1_result_gif](https://github.com/Mahmoudi1993/People_Counting_Real_Time_with_Detectron2/assets/74957886/cd979b01-ddbf-4c0a-841b-3e1141d9ab38)
 
 
 
