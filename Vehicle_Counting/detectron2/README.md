@@ -45,7 +45,7 @@ Command :
   (default: '50,235,410,550')
 
 --score: confidence threshold
-  (default: 0)
+  (default: 0.50)
 
 ```
 Reference:
