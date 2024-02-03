@@ -8,6 +8,11 @@ Running the people counting with Detectron2:
 ```
 python People_Counting.py --video /content/People-Counting-in-Real-Time-with-Detectron2/example/People_test_0.mp4 --output /content/People-Counting-in-Real-Time-with-Detectron2/results/People_test_0_Rsult.mp4 
 ```
+# Demo of Object Detector on People
+
+![Uploading People_test_1_result_gif.gif…]()
+
+
 Command Line Args Reference:
 
 ```
