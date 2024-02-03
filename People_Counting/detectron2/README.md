@@ -10,7 +10,8 @@ python People_Counting.py --video /content/People-Counting-in-Real-Time-with-Det
 ```
 # Demo of Object Detector on People
 
-![Uploading People_test_1_result_gif.gif…]()
+![People_test_1_result_gif](https://github.com/Mahmoudi1993/People_Counting_Real_Time_with_Detectron2/assets/74957886/4c980870-ac01-4256-a81a-35b5c6d5b3ea)
+
 
 
 Command Line Args Reference:
