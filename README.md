@@ -18,6 +18,9 @@ Object tracking implemented with Detectron2, Deep SORT and PyTorch. Detectron2 i
 
 # Demo of Object Detector on Estimate vehicle Speed 
 
+![Car_test_1S_result_gif](https://github.com/Mahmoudi1993/People_Counting_Real_Time_with_Detectron2/assets/74957886/721e4417-da93-460e-908c-57e5eb0e7916)
+
+
 # Getting Started
 To get started, install the proper dependencies either via Anaconda or Pip. I recommend Anaconda route for people using a GPU as it configures CUDA toolkit version for you.
 Installing dependencies and libraries 
