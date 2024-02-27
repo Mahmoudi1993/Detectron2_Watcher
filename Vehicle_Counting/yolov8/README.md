@@ -11,6 +11,8 @@ python estimate_vehicle_speed.py --video /content/People-Counting-in-Real-Time-w
 ```
 # Demo of Estimate vehicle Speed
 
+![Car_test_0S_result_gif](https://github.com/Mahmoudi1993/People_Counting_Real_Time_with_Detectron2andYolov8/assets/74957886/9ef8ef1c-20ae-4fd7-9c03-f70c794a7269)
+
 
 Command Line Args Reference:
 
